@@ -1,0 +1,270 @@
+.invest-india-map-section {
+    width: 100%;
+    float: left;
+    clear: both;
+    padding: 20px 0 0;
+    position: relative;
+    z-index: 1;
+    background: #fff
+}
+
+@media only screen and (min-width:1024px) {
+    .invest-india-map-section {
+        padding: 0;
+        margin: 0
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .invest-india-map-section:before {
+        background: url(/images/svg_shape/shape-left.svg) no-repeat -610px -250px/contain;
+        content: "";
+        width: 100%;
+        height: 820px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        overflow: hidden;
+        transform-origin: top
+    }
+}
+
+.invest-india-map-section svg {
+    display: block;
+    filter: drop-shadow(-3px 10px 10px rgba(131, 128, 163, .6));
+    position: absolute !important;
+    top: 3px;
+    left: 0
+}
+
+.invest-india-map-section .sl-img {
+    display: inline-block;
+    position: absolute;
+    bottom: 152px;
+    user-select: none;
+    right: 320px
+}
+
+.invest-india-map-section .enabled {
+    fill: #42cc7b;
+    stroke: rgba(34, 136, 83, .4);
+    cursor: pointer
+}
+
+.invest-india-map-section .enabled.extra-color {
+    fill: #fff
+}
+
+.invest-india-map-section .enabled:hover {
+    fill: #fabf4f;
+    filter: url(#hover-outer-shadow);
+    stroke: none
+}
+
+.invest-india-map-section .enabled.extra-color,
+.invest-india-map-section .enabled.selected {
+    fill: #fabf4f;
+    filter: url(#path-shadow-filter);
+    stroke: none
+}
+
+.invest-india-map-section .enabled:after {
+    display: block;
+    content: "0";
+    background-color: red;
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px
+}
+
+.invest-india-map-section .shade-effect {
+    fill: #fabf4f;
+    filter: url(#outer-shadow);
+    stroke: none;
+    opacity: 0
+}
+
+.invest-india-map-section .makeVisible {
+    opacity: 1
+}
+
+.invest-india-map-section .description {
+    pointer-events: none;
+    position: absolute;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 4px 4px 0 4px;
+    text-align: center;
+    background-image: linear-gradient(273deg, #e6003c, #f51553);
+    padding: 7px;
+    z-index: 5;
+    margin: 0 auto;
+    color: #fff;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block
+}
+
+.invest-india-map-section .description.active {
+    display: block
+}
+
+.invest-india-map-section .description:after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #e6003c;
+    transform: skew(45deg)
+}
+
+.state-info {
+    background: transparent;
+    max-width: 420px;
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 0 0 15px;
+    margin: auto 0
+}
+
+@media only screen and (min-width:1200px) {
+    .state-info {
+        max-width: 620px
+    }
+}
+
+.state-info p {
+    line-height: 1.5
+}
+
+.state-info .chat-link {
+    padding: 0;
+    margin-bottom: 15px
+}
+
+.map-outer-shadow {
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 20px 79px 0 rgba(127, 132, 148, .4);
+    position: absolute;
+    top: 68px;
+    right: -46px;
+    width: 629px;
+    height: 629px;
+    z-index: -1;
+    transform: scale(.99)
+}
+
+.india-map {
+    background: url(/images/map_bottom.png) no-repeat -14px -32px;
+    width: 735px;
+    height: 705px;
+    position: relative;
+    float: right;
+    clip-path: ellipse(313px 313px at 369px 333px);
+    -webkit-clip-path: ellipse(313px 313px at 369px 333px);
+    overflow: hidden;
+    right: -112px;
+    top: 31px;
+    margin: 20px 0;
+    z-index: 0
+}
+
+.ripple-effect-background {
+    background: url(/images/map_top.png) no-repeat -15px -30px;
+    width: 100%;
+    height: 100%
+}
+
+.states-dropdown {
+    right: 0 !important
+}
+
+@media only screen and (max-width:767px) {
+    .states-dropdown .states-dropdown {
+        max-height: 250px !important
+    }
+}
+
+@media (min-width:1300px) {
+    .states-dropdown {
+        right: -30px !important
+    }
+}
+
+.states-dropdown ul li:nth-child(16) {
+    display: none
+}
+
+.india-map-details {
+    float: left;
+    padding: 80px 40px 40px
+}
+
+.line {
+    width: 40px;
+    height: 3px;
+    background-color: #76c69b;
+    position: absolute;
+    top: 8px;
+    left: 0
+}
+
+.IN-LD {
+    transform: translate(250px, 445px);
+    width: 35px;
+    height: 50px
+}
+
+.button.state-info-check-incentive {
+    background: none;
+    color: #f4663d;
+    box-shadow: 0 3px 6px rgba(244, 102, 61, .36);
+    margin-left: 15px;
+    font-size: 13px;
+    min-width: 165px;
+    width: 174px;
+    padding: 0 5px;
+    min-height: 47px;
+    border: 1px solid #f4663d
+}
+
+.button.state-info-check-incentive:hover {
+    background: #f4663d;
+    color: #fff
+}
+
+.button.state-info-check-incentive:hover .dollar-icon {
+    border: 1px solid #fff
+}
+
+.button.state-info-check-incentive .dollar-icon {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #f4663d;
+    line-height: 20px;
+    margin-right: 5px
+}
+
+.state-info .state-single-window {
+    margin-right: 15px
+}
+
+.state-info .state-single-window .button.ssw {
+    margin-left: 0
+}

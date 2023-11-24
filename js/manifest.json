@@ -1,0 +1,31 @@
+  {
+    "short_name": "Invest India",
+    "name": "Invest India",
+    "icons": [
+      {
+        "src": "/images/iig-32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      },
+      {
+        "src": "/images/iig-64.png",
+        "type": "image/png",
+        "sizes": "64x64"
+      },
+      {
+        "src": "/images/iig-192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/images/iig-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/?utm_source=standalone&utm_medium=pwa",
+    "background_color": "#223169",
+    "display": "standalone",
+    "theme_color": "#223169"
+  }
